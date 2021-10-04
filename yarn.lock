@@ -5288,6 +5288,13 @@ gatsby-plugin-manifest@^3.13.0:
     semver "^7.3.5"
     sharp "^0.29.0"
 
+gatsby-plugin-no-sourcemaps@^3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-3.14.0.tgz#639074727d03719ee4cfcf47b0020afa664ee38f"
+  integrity sha512-oo/FUxCSl8V3igaGyTOtVVsQV9vTonmIq5Xkr3ydj6F14qrAJptGqIQN6JY0Av+6/ofNd4GqLc/sxK56xf1V3g==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+
 gatsby-plugin-offline@^4.13.0:
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-4.14.0.tgz#df2e6f17184a58e66a3ae693855dd91601479ffb"

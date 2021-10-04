@@ -1,6 +1,7 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import FooterComponent from './Footer';
 import HeaderComponent from './Header';
 
 interface Props {
@@ -11,8 +12,9 @@ const LayoutComponent: FunctionComponent<Props> = ({ children }) => {
   return (
     <Wrapper>
       <GlobalStyle />
-      {children}
       <HeaderComponent />
+      {children}
+      <FooterComponent />
     </Wrapper>
   );
 };

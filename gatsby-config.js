@@ -29,6 +29,8 @@ module.exports = {
         name: `contents`,
         path: `${__dirname}/contents`,
       },
+    }, {
+      resolve: `gatsby-plugin-no-sourcemaps`,
     },
     {
       resolve: 'gatsby-plugin-canonical-urls',

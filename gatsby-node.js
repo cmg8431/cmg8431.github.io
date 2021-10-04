@@ -14,6 +14,7 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
 
   actions.setWebpackConfig({
     output,
+    devtool: false,
     resolve: {
       alias: {
         components: path.resolve(__dirname, 'src/components'),
@@ -21,5 +22,6 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
         hooks: path.resolve(__dirname, 'src/hooks'),
       },
     },
-  });
+  })
 };
+
