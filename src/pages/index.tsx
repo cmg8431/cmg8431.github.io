@@ -2,14 +2,15 @@ import React, { FunctionComponent } from 'react';
 import Text from 'components/Text';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import LayoutComponent from 'components/Layout';
 
 const IndexPage: FunctionComponent = () => {
   return (
-    <div>
+    <LayoutComponent>
       <Text text="Hello, World!" />
       <Div />
       <Link to="/info/">To Info</Link>
-    </div>
+    </LayoutComponent>
   );
 };
 
