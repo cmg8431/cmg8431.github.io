@@ -26,7 +26,7 @@ const HeaderArea = styled.div`
 `;
 
 const HeaderWrap = styled.div`
-  box-shadow: 5px 5px 15px #f8f8f8;
+  border-bottom: 1px solid gray;
   position: fixed;
   top: 0;
   left: 0;

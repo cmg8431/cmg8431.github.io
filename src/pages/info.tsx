@@ -1,47 +1,46 @@
-import React, { FunctionComponent } from 'react';
-import { graphql } from 'gatsby';
-import Text from 'components/Text';
-import { Link } from 'gatsby';
+// import React, { FunctionComponent } from 'react';
+// import { graphql } from 'gatsby';
+// import { Link } from 'gatsby';
 
-interface InfoPageProps {
-  data: {
-    site: {
-      siteMetadata: {
-        title: string;
-        description: string;
-        author: string;
-      };
-    };
-  };
-}
+// interface InfoPageProps {
+//   data: {
+//     site: {
+//       siteMetadata: {
+//         title: string;
+//         description: string;
+//         author: string;
+//       };
+//     };
+//   };
+// }
 
-const InfoPage: FunctionComponent<InfoPageProps> = ({
-  data: {
-    site: {
-      siteMetadata: { title, description, author },
-    },
-  },
-}) => {
-  return (
-    <div>
-      <Text text={title} />
-      <Text text={description} />
-      <Text text={author} />
-      <Link to="/">To Main</Link>
-    </div>
-  );
-};
+// const InfoPage: FunctionComponent<InfoPageProps> = ({
+//   data: {
+//     site: {
+//       siteMetadata: { title, description, author },
+//     },
+//   },
+// }) => {
+//   return (
+//     <div>
+//       <Text text={title} />
+//       <Text text={description} />
+//       <Text text={author} />
+//       <Link to="/">To Main</Link>
+//     </div>
+//   );
+// };
 
-export default InfoPage;
+// export default InfoPage;
 
-export const metadataQuery = graphql`
-  {
-    site {
-      siteMetadata {
-        title
-        description
-        author
-      }
-    }
-  }
-`;
+// export const metadataQuery = graphql`
+//   {
+//     site {
+//       siteMetadata {
+//         title
+//         description
+//         author
+//       }
+//     }
+//   }
+// `;
