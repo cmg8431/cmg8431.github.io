@@ -8,7 +8,6 @@ const IndexPage: FunctionComponent = () => {
   return (
     <LayoutComponent>
       <PostList />
-      <Link to="/info/">To Info</Link>
     </LayoutComponent>
   );
 };
