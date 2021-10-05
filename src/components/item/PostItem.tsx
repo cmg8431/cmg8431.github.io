@@ -5,19 +5,14 @@ import { Link } from 'gatsby';
 interface PostItemProps {
   title: string;
   date: string;
-  categories: string[];
   summary: string;
-  thumbnail: string;
   link: string;
 }
 
 const PostItem: FunctionComponent<PostItemProps> = function ({
   title,
   date,
-  categories,
   summary,
-  thumbnail,
-  link,
 }) {
   return (
     <PostItemWrapper>
@@ -37,7 +32,6 @@ const PostItemWrapper = styled(Link)`
   /* transition: 0.3s box-shadow; */
   transition: color 0.3s ease 0s;
   cursor: pointer;
-
   &:hover {
     color: red;
   }

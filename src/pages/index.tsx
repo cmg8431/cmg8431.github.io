@@ -1,15 +1,45 @@
 import React, { FunctionComponent } from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import LayoutComponent from 'components/Layout';
-import PostList from 'components/PostList';
+import PostList, { PostType } from 'components/PostList';
 
-const IndexPage: FunctionComponent = () => {
+interface IndexPageProps {
+  data: {
+    allMarkdownRemark: {
+      edges: PostType[];
+    };
+  };
+}
+const IndexPage: FunctionComponent<IndexPageProps> = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
   return (
     <LayoutComponent>
-      <PostList />
+      <PostList posts={edges} />
     </LayoutComponent>
   );
 };
+
+export const queryPostList = graphql`
+  query queryPostList {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            summary
+            date(formatString: "YYYY.MM.DD.")
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;
