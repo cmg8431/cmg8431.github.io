@@ -14,12 +14,6 @@ module.exports = {
       },
     },
     {
-<<<<<<< HEAD
-=======
-      resolve: `gatsby-plugin-react-helmet`,
-    },
-    {
->>>>>>> 8874c67... feat: Add Seo component and edit UI
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // ssr: false
@@ -35,12 +29,7 @@ module.exports = {
         name: `contents`,
         path: `${__dirname}/contents`,
       },
-<<<<<<< HEAD
     }, {
-=======
-    },
-    {
->>>>>>> 8874c67... feat: Add Seo component and edit UI
       resolve: `gatsby-plugin-no-sourcemaps`,
     },
     {
@@ -49,13 +38,7 @@ module.exports = {
         siteUrl: 'https://cmg8431.github.io/',
         stripQueryString: true,
       },
-<<<<<<< HEAD
     }, {
-=======
-    },
-
-    {
->>>>>>> 8874c67... feat: Add Seo component and edit UI
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -99,8 +82,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 8874c67... feat: Add Seo component and edit UI

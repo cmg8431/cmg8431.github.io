@@ -2047,16 +2047,6 @@
   dependencies:
     "@types/react" "*"
 
-<<<<<<< HEAD
-=======
-"@types/react-helmet@^6.1.3":
-  version "6.1.3"
-  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.3.tgz#1a58b26a79e464c59d3f9cdd5b7ece485335937b"
-  integrity sha512-U4onVxaZxAp78KpXsfmyCIhLjsvJJ3goG3CYFOo+xW0cPYAz9oe5cBAUSAcN7l35OTbrFvu9TuE0YkcZMKGr4A==
-  dependencies:
-    "@types/react" "*"
-
->>>>>>> 8874c67... feat: Add Seo component and edit UI
 "@types/react@*":
   version "17.0.27"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.27.tgz#6498ed9b3ad117e818deb5525fa1946c09f2e0e6"
@@ -5450,11 +5440,7 @@ gatsby-plugin-page-creator@^3.14.0:
     globby "^11.0.4"
     lodash "^4.17.21"
 
-<<<<<<< HEAD
 gatsby-plugin-react-helmet@^4.13.0:
-=======
-gatsby-plugin-react-helmet@^4.14.0:
->>>>>>> 8874c67... feat: Add Seo component and edit UI
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.14.0.tgz#69fe0bd90d65356a0aa144d4e8d75d2559638514"
   integrity sha512-IpLC0mWRNP+E0ezDBXHciVATW+mv2MCvCP3lEYtFQ8mfcm3K//MpeynouNQSPCXn9cH7fr5w0Y355Wl5w1kw1A==

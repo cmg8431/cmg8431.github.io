@@ -1,39 +1,24 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import { PostFrontmatterType } from 'types/PostItem.types'
 
-interface PostItemProps {
-  title: string;
-  date: string;
-  summary: string;
-  link: string;
-}
+type PostItemProps = PostFrontmatterType & { link: string }
 
 const PostItem: FunctionComponent<PostItemProps> = function ({
   title,
   date,
   summary,
+  link,
 }) {
   return (
-<<<<<<< HEAD
-    <PostItemWrapper>
+    <PostItemWrapper to={link}>
       <PostItemContent>
         <Title>{title}</Title>
         <Summary>{summary}</Summary>
         <Date>{date}</Date>
       </PostItemContent>
     </PostItemWrapper>
-=======
-    <li>
-      <PostItemWrapper>
-        <PostItemContent>
-          <Title>{title}</Title>
-          <Summary>{summary}</Summary>
-          <Date>{date}</Date>
-        </PostItemContent>
-      </PostItemWrapper>
-    </li>
->>>>>>> 8874c67... feat: Add Seo component and edit UI
   );
 };
 
