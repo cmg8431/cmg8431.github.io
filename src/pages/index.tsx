@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import LayoutComponent from 'components/Layout';
 import PostList, { PostType } from 'components/PostList';
 
-<<<<<<< HEAD
 import { PostListItemType } from 'types/PostItem.types';
 
 type IndexPageProps = {
@@ -15,7 +14,6 @@ type IndexPageProps = {
   };
 };
 
-=======
 interface IndexPageProps {
   data: {
     allMarkdownRemark: {
@@ -23,7 +21,6 @@ interface IndexPageProps {
     };
   };
 }
->>>>>>> 82047d69e41d6a9fb3a681dc26b59ce7f7694f18
 const IndexPage: FunctionComponent<IndexPageProps> = ({
   data: {
     allMarkdownRemark: { edges },
@@ -44,12 +41,9 @@ export const queryPostList = graphql`
       edges {
         node {
           id
-<<<<<<< HEAD
           fields {
             slug
           }
-=======
->>>>>>> 82047d69e41d6a9fb3a681dc26b59ce7f7694f18
           frontmatter {
             title
             summary
