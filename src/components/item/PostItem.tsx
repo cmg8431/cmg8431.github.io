@@ -1,18 +1,34 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+<<<<<<< HEAD
 import { PostFrontmatterType } from 'types/PostItem.types'
 
 type PostItemProps = PostFrontmatterType & { link: string }
+=======
+
+interface PostItemProps {
+  title: string;
+  date: string;
+  summary: string;
+  link: string;
+}
+>>>>>>> 82047d69e41d6a9fb3a681dc26b59ce7f7694f18
 
 const PostItem: FunctionComponent<PostItemProps> = function ({
   title,
   date,
   summary,
+<<<<<<< HEAD
   link,
 }) {
   return (
     <PostItemWrapper to={link}>
+=======
+}) {
+  return (
+    <PostItemWrapper>
+>>>>>>> 82047d69e41d6a9fb3a681dc26b59ce7f7694f18
       <PostItemContent>
         <Title>{title}</Title>
         <Summary>{summary}</Summary>
