@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-tsx",
     "path": "/",
-    "result": {"pageContext":{}},
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"ceff3b8e-7539-5f99-acaa-53596fd18e3d","fields":{"slug":"/test/"},"frontmatter":{"title":"Test","summary":"졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려졸려","date":"2021.10.06."}}},{"node":{"id":"62543362-0a8b-57b9-b0f2-632cee60f79f","fields":{"slug":"/dmddo/"},"frontmatter":{"title":"견뎌","summary":"졸리지않아요","date":"2021.10.06."}}}]}},"pageContext":{}},
     "staticQueryHashes": []}
