@@ -3,6 +3,9 @@ import { graphql } from 'gatsby';
 import { PostListItemType } from 'types/PostItem.types';
 import PostContent from '../components/PostContent';
 import styled from 'styled-components';
+import HeaderComponent from 'components/Header';
+import { string } from 'prop-types';
+import LayoutComponent from 'components/Layout';
 
 type PostTemplateProps = {
   data: {
@@ -25,7 +28,11 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({
     },
   } = edges[0];
 
-  return <PostContent html={html} />;
+  return (
+    <LayoutComponent>
+      <PostContent html={html} />
+    </LayoutComponent>
+  );
 };
 
 export default PostTemplate;
