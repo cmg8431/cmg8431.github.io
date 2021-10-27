@@ -23,15 +23,10 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
 };
 
 const PostItemWrapper = styled(Link)`
-  display: flex;
-  flex-direction: column;
+  text-decoration-line: none;
+  text-decoration: none;
   border-radius: 1rem;
-  /* transition: 0.3s box-shadow; */
-  transition: color 0.3s ease 0s;
-  cursor: pointer;
-  &:hover {
-    color: red;
-  }
+  color: black;
 `;
 
 const PostItemContent = styled.div`
@@ -50,14 +45,8 @@ const Title = styled.div`
   overflow-wrap: break-word;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
-`;
-
-const Date = styled.div`
-  font-size: 1rem;
-  font-weight: 400;
-  opacity: 0.7;
 `;
 
 const Summary = styled.div`
@@ -67,10 +56,18 @@ const Summary = styled.div`
   text-overflow: ellipsis;
   white-space: normal;
   overflow-wrap: break-word;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   font-size: 1rem;
-  opacity: 0.8;
+  line-height: 1.5;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+`;
+
+const Date = styled.div`
+  font-size: 1rem;
+  font-weight: 200;
+  opacity: 0.7;
+  margin-bottom: 2rem;
 `;
 
 export default PostItem;
