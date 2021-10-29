@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import HeaderComponent from 'components/Header';
 import { string } from 'prop-types';
 import LayoutComponent from 'components/Layout';
+import CommentWidget from 'components/CommentWidget';
 
 type PostTemplateProps = {
   data: {
@@ -29,9 +30,10 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({
   } = edges[0];
 
   return (
-    <LayoutComponent>
+    <>
       <PostContent html={html} />
-    </LayoutComponent>
+      <CommentWidget />
+    </>
   );
 };
 
