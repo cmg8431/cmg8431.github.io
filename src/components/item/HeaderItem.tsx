@@ -6,7 +6,7 @@ import Logo from '../../assets/img/Logo.svg';
 const HeaderItemComponent: FunctionComponent = () => {
   return (
     <HeaderItemWapper>
-      <Link to={'http://localhost:8000/'}>
+      <Link to={'http://mingi.tech/'}>
         <HeaderLogo src={Logo} />
       </Link>
       <HeaderSort />
