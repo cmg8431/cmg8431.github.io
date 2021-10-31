@@ -1,18 +1,12 @@
 import React, { FC, FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import Logo from '../../assets/img/Logo.svg';
 
 const HeaderItemComponent: FunctionComponent = () => {
   return (
     <HeaderItemWapper>
-<<<<<<< HEAD
       <Link to={null}>
         <HeaderLogo>MinGI.tech</HeaderLogo>
-=======
-      <Link to={'http://mingi.tech/'}>
-        <HeaderLogo src={Logo} />
->>>>>>> 107c7822065757579e3c47fc70f4ea21813577d2
       </Link>
       <HeaderSort />
       <HeaderText>share</HeaderText>
@@ -37,9 +31,9 @@ const HeaderText = styled.div`
 const HeaderSort = styled.div`
   width: 35rem;
 `;
-const HeaderLogo = styled.img`
+const HeaderLogo = styled.div`
   color: white;
-  width: 4.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
 `;
 
