@@ -23,6 +23,7 @@ const HeaderArea = styled.div`
   position: relative;
   width: 100%;
   height: 3.5rem;
+  background-color: black;
 `;
 
 const HeaderWrap = styled.div`
