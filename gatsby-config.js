@@ -29,7 +29,8 @@ module.exports = {
         name: `contents`,
         path: `${__dirname}/contents`,
       },
-    }, {
+    },
+    {
       resolve: `gatsby-plugin-no-sourcemaps`,
     },
     {
@@ -38,7 +39,8 @@ module.exports = {
         siteUrl: 'https://cmg8431.github.io/',
         stripQueryString: true,
       },
-    }, {
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [

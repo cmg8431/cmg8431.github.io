@@ -1,13 +1,14 @@
 import React, { FC, FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import Logo from '../../assets/img/Logo.svg';
 
 const HeaderItemComponent: FunctionComponent = () => {
   return (
     <HeaderItemWapper>
-      <HeaderLogo>
-        Min<Dmddo>GI</Dmddo>
-      </HeaderLogo>
+      <Link to={'http://mingi.tech/'}>
+        <HeaderLogo src={Logo} />
+      </Link>
       <HeaderSort />
     </HeaderItemWapper>
   );
@@ -25,15 +26,10 @@ const HeaderItemWapper = styled.div`
 const HeaderSort = styled.div`
   width: 800px;
 `;
-const HeaderLogo = styled.div`
+const HeaderLogo = styled.img`
   color: white;
-  font-size: 1.5rem;
+  width: 4.5rem;
   font-weight: 600;
-`;
-const Dmddo = styled(HeaderLogo)`
-  font-weight: 200;
-  display: inline;
-  list-style-type: none;
 `;
 
 export default HeaderItemComponent;
