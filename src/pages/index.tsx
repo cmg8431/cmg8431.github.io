@@ -6,6 +6,7 @@ import PostList, { PostType } from 'components/PostList';
 
 import { PostListItemType } from 'types/PostItem.types';
 import BannerComponents from 'components/Banner';
+import SEO from 'components/Seo';
 
 type IndexPageProps = {
   data: {
@@ -22,6 +23,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
 }) => {
   return (
     <LayoutComponent>
+      <SEO title={'MinGI.tech'} />
       <BannerComponents />
       <PostList posts={edges} />
     </LayoutComponent>
