@@ -26,7 +26,6 @@ const HeaderArea = styled.div`
 `;
 
 const HeaderWrap = styled.div`
-  border-bottom: 1px solid gray;
   position: fixed;
   display: flex;
   top: 0;
@@ -35,7 +34,9 @@ const HeaderWrap = styled.div`
   width: 100%;
   height: 3.5rem;
   transition: 0.4s ease;
-  background-color: black;
+  background-color: #ffffff00;
+  backdrop-filter: blur(20px);
+
   &.hide {
     transform: translateY(-80px);
   }

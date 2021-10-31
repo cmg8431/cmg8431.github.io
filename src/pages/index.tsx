@@ -5,6 +5,7 @@ import LayoutComponent from 'components/Layout';
 import PostList, { PostType } from 'components/PostList';
 
 import { PostListItemType } from 'types/PostItem.types';
+import BannerComponents from 'components/Banner';
 
 type IndexPageProps = {
   data: {
@@ -21,6 +22,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
 }) => {
   return (
     <LayoutComponent>
+      <BannerComponents />
       <PostList posts={edges} />
     </LayoutComponent>
   );

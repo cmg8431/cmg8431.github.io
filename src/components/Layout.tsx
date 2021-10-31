@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
         height: 100%;
         min-height: 100vh;
         font-family: "Noto Sans KR", sans-serif !important;
-        background-color: white;   
+        background-color: #050507;   
     };
     button{
         cursor: pointer;

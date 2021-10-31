@@ -26,7 +26,7 @@ const PostItemWrapper = styled(Link)`
   text-decoration-line: none;
   text-decoration: none;
   border-radius: 1rem;
-  color: black;
+  color: white;
 `;
 
 const PostItemContent = styled.div`

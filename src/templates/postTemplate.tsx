@@ -28,11 +28,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({
     },
   } = edges[0];
 
-  return (
-    <LayoutComponent>
-      <PostContent html={html} />
-    </LayoutComponent>
-  );
+  return <PostContent html={html} />;
 };
 
 export default PostTemplate;
