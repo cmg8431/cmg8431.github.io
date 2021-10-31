@@ -42,7 +42,8 @@ const Button = styled.button`
   margin-bottom: 3rem;
   margin-top: 2rem;
   color: #000000;
-  font-weight: 600;
+  font-weight: bold;
+  font-family: 'Noto Sans KR', sans-serif !important;
   font-size: 1rem;
   border-radius: 1rem;
   width: 13rem;
