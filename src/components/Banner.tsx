@@ -22,7 +22,7 @@ const BannerWapper = styled.div`
   justify-content: center;
   background-color: black;
   width: 100%;
-  height: 25rem;
+  height: 36rem;
   margin-bottom: 2rem;
   align-items: center;
 `;
@@ -35,7 +35,7 @@ const Title = styled.h1`
   margin-top: 3rem;
   color: white;
   line-height: 1.6;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 `;
 
 const Button = styled.button`
@@ -48,8 +48,11 @@ const Button = styled.button`
   border-radius: 1rem;
   width: 13rem;
   border: none;
-  height: 3rem;
-  background-color: #7f7c87;
+  height: 3.1rem;
+  background-color: white;
+  :hover {
+    background-color: #7f7c87;
+  }
 `;
 
 export default BannerComponents;
