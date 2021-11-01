@@ -25,11 +25,27 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
     <LayoutComponent>
       <SEO title={'MinGI.tech'} />
       <BannerComponents />
+      <TextLayer>
+        <BlogText>DEVELOP BLOG</BlogText>
+      </TextLayer>
       <PostList posts={edges} />
     </LayoutComponent>
   );
 };
 
+const TextLayer = styled.div`
+  height: 25rem;
+`;
+const BlogText = styled.div`
+  margin-top: 3rem;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 8rem;
+  font-weight: 100;
+  position: sticky;
+  top: 100px;
+  z-index: 0;
+`;
 export const queryPostList = graphql`
   query queryPostList {
     allMarkdownRemark(
