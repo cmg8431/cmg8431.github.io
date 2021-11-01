@@ -1,9 +1,10 @@
-import React, { FunctionComponent, ReactNode } from 'react';
+import React, { FunctionComponent, ReactNode, useState } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 import FooterComponent from './Footer';
 import HeaderComponent from './Header';
-
+import { useCopyClipboard } from 'hooks';
+import ClipModalComponent from '../components/item/HeaderItem';
 interface Props {
   children: React.ReactNode;
 }
@@ -27,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
         height: 100%;
         min-height: 100vh;
         font-family: "Noto Sans KR", sans-serif !important;
-        background-color: #050507;   
+        background-color: #08080B;   
     };
     button{
         cursor: pointer;
