@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import { Helmet } from 'react-helmet';
+import Icon from '../assets/img/Logo.png';
 
 interface Props {
   description?: string;
@@ -49,14 +50,8 @@ export default function SEO({
       ].concat(meta)}
       link={[
         {
-          href: '//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css',
-          rel: 'stylesheet',
-          type: 'text/css',
-        },
-        {
-          href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600;700&display=swap',
-          rel: 'stylesheet',
-          type: 'text/css',
+          rel: 'shortcut icon',
+          href: Icon,
         },
       ]}
     />
