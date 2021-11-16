@@ -30,6 +30,9 @@ const BannerWapper = styled.div`
 const Img = styled.img`
   width: 300px;
   height: 310px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 const Title = styled.h1`
   margin-top: 3rem;
@@ -50,8 +53,12 @@ const Button = styled.button`
   border: none;
   height: 3.1rem;
   background-color: white;
+  transition: all 0.3s;
   :hover {
-    background-color: #7f7c87;
+    border: 1px solid white;
+    color: white;
+    border-color: white;
+    background-color: #000000;
   }
 `;
 
