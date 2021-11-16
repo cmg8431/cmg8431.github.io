@@ -45,6 +45,10 @@ const BlogText = styled.div`
   position: sticky;
   top: 100px;
   z-index: 0;
+
+  @media (max-width: 768px) {
+    font-size: 4rem;
+  }
 `;
 export const queryPostList = graphql`
   query queryPostList {
@@ -61,6 +65,9 @@ export const queryPostList = graphql`
             title
             summary
             date(formatString: "YYYY.MM.DD.")
+            thumbnail {
+              publicURL
+            }
           }
         }
       }

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { PostFrontmatterType } from 'types/PostItem.types';
 import Thumbnail from '../../assets/img/PostImg.png';
+import { useScrollFadeIn } from '../../hooks/useScrollFadeIn';
 
 type PostItemProps = PostFrontmatterType & { link: string };
 
@@ -11,17 +12,23 @@ const PostItem: FunctionComponent<PostItemProps> = ({
   date,
   summary,
   link,
-  thumbnail,
+  thumbnail: { publicURL },
 }) => {
   const [hover, setHover] = useState(false);
+  const animatedItem = useScrollFadeIn();
   const onHover = () => {
     setHover(!hover);
   };
   return (
     <>
-      <PostItemWrapper to={link} onMouseEnter={onHover} onMouseLeave={onHover}>
+      <PostItemWrapper
+        to={link}
+        onMouseEnter={onHover}
+        onMouseLeave={onHover}
+        {...animatedItem}
+      >
         <PostItemContent>
-          <ThumbnailImage src={Thumbnail} alt="post img" />
+          <ThumbnailImage src={publicURL} alt="post img" />
           <Title>{title}</Title>
           <Summary>{summary}</Summary>
           <Date>{date}</Date>
@@ -71,6 +78,10 @@ const PostItemContent = styled.div`
     filter: blur(4px);
     transition: 0.2s ease;
     box-shadow: 1px 1px 100px #131313;
+  }
+
+  @media (max-width: 926px) {
+    padding: 1rem;
   }
 `;
 

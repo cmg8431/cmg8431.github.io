@@ -20,6 +20,9 @@ const FooterWrapper = styled.footer`
   line-height: 1.5;
   color: white;
   font-family: 'Times New Roman', Times, serif;
+  @media (max-width: 926px) {
+    font-size: 0.7rem;
+  }
 `;
 
 const DevelopText = styled(Link)`

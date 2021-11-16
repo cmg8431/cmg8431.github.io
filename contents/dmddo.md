@@ -2,6 +2,7 @@
 date: '2021-10-06'
 title: '견뎌'
 summary: '졸리지않아요'
+thumbnail: './PostImg.png'
 ---
 
 ### 1. 나는 아기인거같애

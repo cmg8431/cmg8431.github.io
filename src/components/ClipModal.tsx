@@ -24,6 +24,7 @@ export const ClipModal = ({
         onAnimationEnd={(): void => setState(false)}
       >
         <Message>{message}</Message>
+        <div />
       </Wrapper>
     );
   }
@@ -32,36 +33,28 @@ export const ClipModal = ({
 };
 
 const ToastAnimation = keyframes`
-  from {
+  /* from {
+    margin-left: 100%;
     top: 50%;
   }
   to {
+    margin-left: 0%;
     top: 50%;
-  }
+  } */
 `;
 
 export const Wrapper = styled.section<{ timeout: number }>`
-  left: 80%;
-  bottom: -2900%;
-
+  top: 1rem;
+  right: 1rem;
+  margin-right: 1rem;
   display: flex;
   position: fixed;
-  /* position: fixed;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  border-radius: 20px;
-  display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(-50%, -50%);
-  font-family: 'SpoqaHanSans';
-  font-size: 50%;
- */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 3rem;
+  width: 20rem;
+  background-color: #5c5c5c;
+  border-radius: 0.2rem;
   animation-name: ${ToastAnimation};
   animation-duration: ${({ timeout }): string => `${timeout / 2}s`};
   animation-iteration-count: 2;
@@ -75,5 +68,5 @@ export const Wrapper = styled.section<{ timeout: number }>`
 
 export const Message = styled.p`
   width: auto;
-  font-size: 100rem;
+  font-size: 1rem;
 `;

@@ -17,26 +17,27 @@ const HeaderItemComponent: FunctionComponent = () => {
 
   const useURL = typeof window !== 'undefined' && window.location.href;
 
-  // const ClipModalComponent = () => {
-  //   return (
-  //     <ClipModal
-  //       message={
-  //         clipboardState.isSuccess
-  //           ? '현재 페이지의 주소가 복사되었습니다!'
-  //           : '현재 페이지의 주소 복사를 실패했습니다.'
-  //       }
-  //       timeout={300}
-  //       state={toastState}
-  //       setState={setToastState}
-  //     />
-  //   );
-  // };
+  const ClipModalComponent = () => {
+    return (
+      <ClipModal
+        message={
+          clipboardState.isSuccess
+            ? '현재 페이지의 주소가 복사되었습니다!'
+            : '현재 페이지의 주소 복사를 실패했습니다.'
+        }
+        timeout={2}
+        state={toastState}
+        setState={setToastState}
+      />
+    );
+  };
   return (
     <HeaderItemWapper>
       <HeaderLogo to={useURL}>MinGI.tech</HeaderLogo>
       <HeaderSort />
       <ShareButton onClick={copy}>share</ShareButton>
       <HeaderText>portfolio</HeaderText>
+      <ClipModalComponent />
     </HeaderItemWapper>
   );
 };
@@ -52,6 +53,9 @@ const HeaderItemWapper = styled.div`
 
 const HeaderText = styled.div`
   margin-left: 2rem;
+  @media (max-width: 900px) {
+    margin-right: 1rem;
+  }
 `;
 
 const ShareButton = styled.button`
@@ -70,6 +74,10 @@ const HeaderLogo = styled(Link)`
   font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
+  @media (max-width: 900px) {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
 `;
 
 export default HeaderItemComponent;
