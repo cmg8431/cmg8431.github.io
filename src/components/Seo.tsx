@@ -47,6 +47,10 @@ export default function SEO({
         {
           name: `twitter:description`,
         },
+        {
+          name: 'google-site-verification',
+          content: 'u2qanESU0vG-gmAYFlZXjlx0x43q-QR1h2VCKYxjmHI',
+        },
       ].concat(meta)}
       link={[
         {
