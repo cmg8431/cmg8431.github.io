@@ -3,7 +3,7 @@ module.exports = {
     title: `학생 개발자의 개발 블로그`,
     description: `테스트 중이에요`,
     author: `mingi`,
-    siteUrl: 'https://cmg8431.github.io/',
+    siteUrl: 'https://mingi.tech/',
   },
   plugins: [
     {
@@ -36,7 +36,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://cmg8431.github.io/',
+        siteUrl: 'https://mingi.tech/',
         stripQueryString: true,
       },
     },
