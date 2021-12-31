@@ -1,12 +1,18 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
+import LayoutComponent from 'components/Layout';
+import reset from 'styled-reset';
 
 type PostContentProps = {
   html: string;
 };
 
 const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
-  return <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
+  return (
+    <LayoutComponent>
+      <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
+    </LayoutComponent>
+  );
 };
 
 const MarkdownRenderer = styled.div`
@@ -17,29 +23,26 @@ const MarkdownRenderer = styled.div`
   margin: 0 auto;
   padding: 100px 0;
   word-break: break-all;
-
-  // Markdown Style
+  color: white;
   line-height: 1.8;
   font-size: 16px;
   font-weight: 400;
-
   // Apply Padding Attribute to All Elements
   p {
     padding: 3px 0;
   }
 
-  // Adjust Heading Element Style
   h1,
   h2,
   h3 {
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   * + h1,
   * + h2,
   * + h3 {
-    margin-top: 80px;
+    margin-top: 10px;
   }
 
   hr + h1,
@@ -62,9 +65,9 @@ const MarkdownRenderer = styled.div`
 
   // Adjust Quotation Element Style
   blockquote {
-    margin: 30px 0;
-    padding: 5px 15px;
-    border-left: 2px solid #000000;
+    margin: 10px 0;
+    padding: 1px 15px;
+    border-left: 2px solid white;
     font-weight: 800;
   }
 

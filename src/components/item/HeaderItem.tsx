@@ -8,15 +8,12 @@ import { useCopyClipboard } from 'hooks';
 const HeaderItemComponent: FunctionComponent = () => {
   const [toastState, setToastState] = useState<boolean>(false);
   const [clipboardState, copyToClipboard] = useCopyClipboard();
-
   const copy = (): void => {
     const { href } = location;
     setToastState(true);
     copyToClipboard(href);
   };
-
   const useURL = typeof window !== 'undefined' && window.location.href;
-
   const ClipModalComponent = () => {
     return (
       <ClipModal
