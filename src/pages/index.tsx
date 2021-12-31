@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import LayoutComponent from 'components/Layout';
-import PostList, { PostType } from 'components/PostList';
+import PostList from 'components/PostList';
 
 import { PostListItemType } from 'types/PostItem.types';
 import BannerComponents from 'components/Banner';

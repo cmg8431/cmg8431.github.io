@@ -15,7 +15,7 @@ const PostItem: FunctionComponent<PostItemProps> = ({
   thumbnail: { publicURL },
 }) => {
   const [hover, setHover] = useState(false);
-  const animatedItem = useScrollFadeIn();
+  const animatedItem: any = useScrollFadeIn();
   const onHover = () => {
     setHover(!hover);
   };
@@ -75,8 +75,8 @@ const PostItemContent = styled.div`
   padding: 1rem;
   :hover {
     backdrop-filter: blur(5px);
-    filter: blur(4px);
     transition: 0.2s ease;
+    box-shadow: 1px 1px 100px #131313;
   }
 
   @media (max-width: 926px) {
