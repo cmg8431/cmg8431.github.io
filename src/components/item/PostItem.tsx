@@ -77,7 +77,6 @@ const PostItemContent = styled.div`
     backdrop-filter: blur(5px);
     filter: blur(4px);
     transition: 0.2s ease;
-    box-shadow: 1px 1px 100px #131313;
   }
 
   @media (max-width: 926px) {

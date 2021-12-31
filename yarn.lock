@@ -5370,6 +5370,11 @@ gatsby-plugin-canonical-urls@^3.14.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
+gatsby-plugin-cname@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-cname/-/gatsby-plugin-cname-1.0.0.tgz#5752d006c476a3c7897fca5c307901df5501747a"
+  integrity sha512-U0yRgn4cm1zBi+qC5a827acPFnUqKSowoCvAxT3MDmMJVLSWB4vmSyM7m6ThVz35obO4nKr4iP4vZhvA7gEVsA==
+
 gatsby-plugin-emotion@^6.14.0:
   version "6.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-6.14.0.tgz#73da693e1cbf6aa5412028ce43f7deb26fdc68c4"

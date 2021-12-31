@@ -46,10 +46,11 @@ const BlogText = styled.div`
   top: 100px;
   z-index: 0;
 
-  @media (max-width: 768px) {
-    font-size: 4rem;
+  @media (max-width: 968px) {
+    font-size: 4.5rem;
   }
 `;
+
 export const queryPostList = graphql`
   query queryPostList {
     allMarkdownRemark(
