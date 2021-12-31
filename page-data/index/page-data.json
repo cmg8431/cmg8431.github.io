@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-tsx",
     "path": "/",
-    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"402aa4d9-ae22-53f3-80c7-bbbbbe1fba0b","fields":{"slug":"/응애/해커톤/"},"frontmatter":{"title":"첫 해커톤…","summary":"첫 해커톤인 한국코드페어의 금상(장관상) 수상까지에 대한 이야기를 담았어요. ","date":"2021.12.01.","thumbnail":{"publicURL":"/static/6997071759c8477f9f5b8c993ac74277/PostImg.png"}}}}]}},"pageContext":{}},
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"9a6ce3a0-fcc5-56a3-b93f-a18623867c11","fields":{"slug":"/해커톤-한국코드페어/한국코드페어/"},"frontmatter":{"title":"첫 해커톤…","summary":"첫 해커톤인 한국코드페어의 금상(장관상) 수상까지에 대한 이야기를 담았어요. ","date":"2021.12.01.","thumbnail":{"publicURL":"/static/6997071759c8477f9f5b8c993ac74277/PostImg.png"}}}}]}},"pageContext":{}},
     "staticQueryHashes": []}
