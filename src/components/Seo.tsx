@@ -51,6 +51,10 @@ export default function SEO({
           name: 'google-site-verification',
           content: 'u2qanESU0vG-gmAYFlZXjlx0x43q-QR1h2VCKYxjmHI',
         },
+        {
+          name: 'naver-site-verification',
+          content: '0191c22b01465724746a94eb6aa2270d5205d4ec',
+        },
       ].concat(meta)}
       link={[
         {
