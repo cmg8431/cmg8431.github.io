@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from 'react';
+import React, { FunctionComponent, useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { PostFrontmatterType } from 'types/PostItem.types';
@@ -14,17 +14,15 @@ const PostItem: FunctionComponent<PostItemProps> = ({
   link,
   thumbnail: { publicURL },
 }) => {
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState({ display: 'none' });
   const animatedItem: any = useScrollFadeIn();
-  const onHover = () => {
-    setHover(!hover);
-  };
+
   return (
     <>
       <PostItemWrapper
         to={link}
-        onMouseEnter={onHover}
-        onMouseLeave={onHover}
+        onMouseEnter={e => setHover({ display: 'block' })}
+        onMouseLeave={e => setHover({ display: 'none' })}
         {...animatedItem}
       >
         <PostItemContent>
@@ -33,7 +31,7 @@ const PostItem: FunctionComponent<PostItemProps> = ({
           <Summary>{summary}</Summary>
           <Date>{date}</Date>
         </PostItemContent>
-        {hover ? <Text>click me</Text> : ''}
+        <Text style={hover}>click me</Text>
       </PostItemWrapper>
     </>
   );

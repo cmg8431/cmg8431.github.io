@@ -13,7 +13,6 @@ const HeaderItemComponent: FunctionComponent = () => {
     setToastState(true);
     copyToClipboard(href);
   };
-  const useURL = typeof window !== 'undefined' && window.location.href;
   const ClipModalComponent = () => {
     return (
       <ClipModal
@@ -30,7 +29,7 @@ const HeaderItemComponent: FunctionComponent = () => {
   };
   return (
     <HeaderItemWapper>
-      <HeaderLogo to={useURL}>MinGI.tech</HeaderLogo>
+      <HeaderLogo to={'/'}>MinGI.tech</HeaderLogo>
       <HeaderSort />
       <ShareButton onClick={copy}>share</ShareButton>
       <HeaderText>portfolio</HeaderText>
