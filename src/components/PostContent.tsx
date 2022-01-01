@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import LayoutComponent from 'components/Layout';
+import CommentWidget from './CommentWidget';
 
 type PostContentProps = {
   html: string;
@@ -11,8 +12,8 @@ const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
     <LayoutComponent>
       <div>
         <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
-        <CommentWidget />
       </div>
+      <CommentWidget />
     </LayoutComponent>
   );
 };
