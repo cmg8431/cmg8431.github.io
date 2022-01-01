@@ -25,9 +25,10 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({
   } = edges[0];
 
   return (
-    <div>
+    <LayoutComponent>
       <PostContent html={html} />
-    </div>
+      <CommentWidget />
+    </LayoutComponent>
   );
 };
 
