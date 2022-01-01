@@ -146,6 +146,9 @@ const MarkdownRenderer = styled.div`
     hr {
       margin: 50px 0;
     }
+    p {
+      font-size: 18px;
+    }
   }
 `;
 
