@@ -10,9 +10,9 @@ type PostContentProps = {
 const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
   return (
     <LayoutComponent>
-      <div>
+      <MarkdownWrapper>
         <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
-      </div>
+      </MarkdownWrapper>
       <CommentWrapper>
         <CommentWidget />
       </CommentWrapper>
@@ -22,7 +22,12 @@ const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
 const CommentWrapper = styled.div`
   width: 100%;
 `;
-
+const MarkdownWrapper = styled.div`
+  @media (max-width: 768px) {
+    padding: 20px 20px;
+    display: flex;
+  }
+`;
 const MarkdownRenderer = styled.div`
   // Renderer Style
   display: flex;
@@ -32,10 +37,11 @@ const MarkdownRenderer = styled.div`
   padding: 100px 0;
   word-break: break-all;
   color: white;
+
   line-height: 1.8;
   font-size: 16px;
   font-weight: 400;
-  // Apply Padding Attribute to All Elements
+
   p {
     padding: 3px 0;
   }
@@ -120,7 +126,7 @@ const MarkdownRenderer = styled.div`
     width: 100%;
     line-height: 1.6;
     font-size: 14px;
-
+    padding: 80px 20px;
     h1 {
       font-size: 23px;
     }

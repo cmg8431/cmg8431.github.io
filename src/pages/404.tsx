@@ -27,17 +27,20 @@ const NotFoundPageWrapper = styled.div`
 `;
 
 const NotFoundText = styled.div`
-  font-size: 150px;
+  font-size: 200px;
   font-weight: 800;
+  color: white;
+  padding-bottom: 1rem;
   @media (max-width: 768px) {
     font-size: 100px;
   }
 `;
 
 const NotFoundDescription = styled.div`
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   line-height: 1.3;
+  color: white;
 
   @media (max-width: 768px) {
     font-size: 20px;
