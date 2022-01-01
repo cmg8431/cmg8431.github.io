@@ -2,7 +2,6 @@ import React, { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
 import { PostListItemType } from 'types/PostItem.types';
 import PostContent from '../components/PostContent';
-import CommentWidget from 'components/CommentWidget';
 
 type PostTemplateProps = {
   data: {
@@ -27,7 +26,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({
 
   return (
     <div>
-      <PostContent html={html} /> <CommentWidget />
+      <PostContent html={html} />
     </div>
   );
 };

@@ -11,6 +11,7 @@ const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
   return (
     <LayoutComponent>
       <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
+      <CommentWidget />
     </LayoutComponent>
   );
 };

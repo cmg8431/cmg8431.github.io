@@ -24,7 +24,7 @@ const CommentWidget: FunctionComponent = () => {
       repo,
       'issue-term': 'pathname',
       label: 'Comment',
-      theme: `github-light`,
+      theme: `github-dark`,
       crossorigin: 'anonymous',
       async: 'true',
     };
