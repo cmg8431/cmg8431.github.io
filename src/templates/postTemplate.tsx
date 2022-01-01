@@ -29,7 +29,6 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({
   return (
     <div>
       <PostContent html={html} />
-      <CommentWidget />
     </div>
   );
 };

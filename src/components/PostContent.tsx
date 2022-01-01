@@ -9,7 +9,10 @@ type PostContentProps = {
 const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
   return (
     <LayoutComponent>
-      <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
+      <div>
+        <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
+        <CommentWidget />
+      </div>
     </LayoutComponent>
   );
 };
