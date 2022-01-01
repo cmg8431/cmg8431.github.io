@@ -10,7 +10,6 @@ interface Props {
 }
 
 export default function SEO({
-  description = '',
   lang = 'en',
   meta = [],
   title,

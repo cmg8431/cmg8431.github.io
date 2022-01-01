@@ -13,10 +13,15 @@ const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
       <div>
         <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
       </div>
-      <CommentWidget />
+      <CommentWrapper>
+        <CommentWidget />
+      </CommentWrapper>
     </LayoutComponent>
   );
 };
+const CommentWrapper = styled.div`
+  width: 100%;
+`;
 
 const MarkdownRenderer = styled.div`
   // Renderer Style
