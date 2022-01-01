@@ -1,15 +1,17 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import LayoutComponent from 'components/Layout';
-import reset from 'styled-reset';
-import CommentWidget from './CommentWidget';
 
 type PostContentProps = {
   html: string;
 };
 
 const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
-  return <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
+  return (
+    <LayoutComponent>
+      <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
+    </LayoutComponent>
+  );
 };
 
 const MarkdownRenderer = styled.div`

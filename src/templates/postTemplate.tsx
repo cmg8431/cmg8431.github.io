@@ -2,6 +2,8 @@ import React, { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
 import { PostListItemType } from 'types/PostItem.types';
 import PostContent from '../components/PostContent';
+import LayoutComponent from 'components/Layout';
+import CommentWidget from 'components/CommentWidget';
 
 type PostTemplateProps = {
   data: {
@@ -25,10 +27,10 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({
   } = edges[0];
 
   return (
-    <LayoutComponent>
+    <div>
       <PostContent html={html} />
       <CommentWidget />
-    </LayoutComponent>
+    </div>
   );
 };
 
