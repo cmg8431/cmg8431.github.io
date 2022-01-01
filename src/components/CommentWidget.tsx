@@ -1,4 +1,5 @@
 import React, { createRef, FunctionComponent, useEffect } from 'react';
+import styled from 'styled-components';
 
 const src = 'https://utteranc.es/client.js';
 const repo = 'cmg8431/blog-comments';
@@ -36,7 +37,12 @@ const CommentWidget: FunctionComponent = () => {
     element.current.appendChild(utterances);
   }, []);
 
-  return <div ref={element} />;
+  return <UtterancesWrapper ref={element} />;
 };
 
+const UtterancesWrapper = styled.div`
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+`;
 export default CommentWidget;
