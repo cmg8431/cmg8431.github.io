@@ -24,7 +24,7 @@ const CommentWrapper = styled.div`
 `;
 const MarkdownWrapper = styled.div`
   @media (max-width: 768px) {
-    padding: 20px 8px;
+    padding: 0px 8px;
     display: flex;
   }
 `;
