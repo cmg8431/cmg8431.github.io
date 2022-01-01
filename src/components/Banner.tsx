@@ -4,20 +4,27 @@ import PortfolioImg from '../assets/img/PortfolioImg.png';
 
 const BannerComponents: FunctionComponent = () => {
   return (
-    <BannerWapper>
-      <div>
+    <BannerWrapper>
+      <BannerItemWrapper>
         <Title>
           블로그에 오신걸 환영합니다. <br /> 제가 궁금하시다면 아래 버튼을
           눌러주세요 !
         </Title>
         <Button>포트폴리오 보기</Button>
-      </div>
+      </BannerItemWrapper>
       <Img src={PortfolioImg} />
-    </BannerWapper>
+    </BannerWrapper>
   );
 };
 
-const BannerWapper = styled.div`
+const BannerItemWrapper = styled.div`
+  @media (max-width: 668px) {
+    padding: 0px 10px;
+    font-size: 5px;
+  }
+`;
+
+const BannerWrapper = styled.div`
   display: flex;
   justify-content: center;
   background-color: black;
@@ -39,6 +46,9 @@ const Title = styled.h1`
   color: white;
   line-height: 1.6;
   font-size: 1.8rem;
+  @media (max-width: 668px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Button = styled.button`

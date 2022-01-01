@@ -47,6 +47,7 @@ const BlogText = styled.div`
   z-index: 0;
 
   @media (max-width: 968px) {
+    margin 
     font-size: 4.5rem;
   }
 `;
