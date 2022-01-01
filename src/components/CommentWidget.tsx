@@ -1,7 +1,7 @@
 import React, { createRef, FunctionComponent, useEffect } from 'react';
 
-const src = 'http://mingi.tech/';
-const repo = 'cmg8431/mingi.tech';
+const src = 'https://utteranc.es/client.js';
+const repo = 'cmg8431/blog-comments';
 
 type UtterancesAttributesType = {
   src: string;
