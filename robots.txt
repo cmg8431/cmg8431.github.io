@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://mingi.tech/sitemap/sitemap-index.xml
+Host: https://mingi.tech
