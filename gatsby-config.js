@@ -4,6 +4,7 @@ module.exports = {
     description: `테스트 중이에요`,
     author: `mingi`,
     siteUrl: 'https://mingi.tech/',
+    link: [(rel = 'canonical'), (href = 'https://mingi.tech/')],
   },
   plugins: [
     {
