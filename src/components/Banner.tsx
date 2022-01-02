@@ -19,7 +19,7 @@ const BannerComponents: FunctionComponent = () => {
 
 const BannerItemWrapper = styled.div`
   @media (max-width: 668px) {
-    padding: 0px 10px;
+    padding: 0px 20px;
     font-size: 5px;
   }
 `;
