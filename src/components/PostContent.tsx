@@ -43,7 +43,7 @@ const MarkdownRenderer = styled.div`
   font-weight: 400;
 
   p {
-    padding: 3px 0;
+    padding: 5px 0;
   }
 
   h1,
@@ -56,13 +56,13 @@ const MarkdownRenderer = styled.div`
   * + h1,
   * + h2,
   * + h3 {
-    margin-top: 10px;
+    margin-top: 50px;
   }
 
   hr + h1,
   hr + h2,
   hr + h3 {
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   h1 {

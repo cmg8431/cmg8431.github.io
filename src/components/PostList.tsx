@@ -2,12 +2,16 @@ import React, { FunctionComponent } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import PostItem from 'components/item/PostItem';
 import { PostListItemType } from 'types/PostItem.types';
+import { useEffect } from 'react';
 
 type PostListProps = {
   posts: PostListItemType[];
 };
 
 const PostList: FunctionComponent<PostListProps> = ({ posts }) => {
+  useEffect(() => {
+    console.log(posts);
+  }, []);
   return (
     <PostListWrapper>
       {posts.map(

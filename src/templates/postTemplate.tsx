@@ -20,10 +20,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({
   },
 }) => {
   const {
-    node: {
-      html,
-      frontmatter: { title, summary, date },
-    },
+    node: { html },
   } = edges[0];
 
   return (
