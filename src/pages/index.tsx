@@ -65,14 +65,14 @@ const BlogText = styled.div`
     font-size: 2rem;
   }
   @media (max-width: 212px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;
 
 export const queryPostList = graphql`
   query queryPostList {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] }
+      sort: { order: ASC, fields: [frontmatter___date, frontmatter___title] }
     ) {
       edges {
         node {

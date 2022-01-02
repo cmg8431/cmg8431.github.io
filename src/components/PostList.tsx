@@ -8,10 +8,7 @@ type PostListProps = {
   posts: PostListItemType[];
 };
 
-const PostList: FunctionComponent<PostListProps> = ({ posts }) => {
-  useEffect(() => {
-    console.log(posts);
-  }, []);
+const PostList: FunctionComponent<PostListProps> = ({ posts }: any) => {
   return (
     <PostListWrapper>
       {posts.map(
