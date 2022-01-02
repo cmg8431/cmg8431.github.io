@@ -32,6 +32,7 @@ export default function SEO({
         },
         {
           property: `og:description`,
+          content: description,
         },
         {
           property: `og:type`,
