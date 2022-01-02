@@ -149,6 +149,9 @@ const MarkdownRenderer = styled.div`
     p {
       font-size: 18px;
     }
+    .gatsby-highlight {
+      display: inline-grid;
+    }
   }
 `;
 
