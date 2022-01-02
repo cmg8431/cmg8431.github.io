@@ -12,7 +12,7 @@ const BannerComponents: FunctionComponent = () => {
         </Title>
         <Button>포트폴리오 보기</Button>
       </BannerItemWrapper>
-      <Img src={PortfolioImg} />
+      <Img src={PortfolioImg} alt="메인 이미지" />
     </BannerWrapper>
   );
 };

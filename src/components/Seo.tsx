@@ -10,6 +10,7 @@ interface Props {
 }
 
 export default function SEO({
+  description,
   lang = 'en',
   meta = [],
   title,
@@ -23,6 +24,7 @@ export default function SEO({
       meta={[
         {
           name: `description`,
+          content: description,
         },
         {
           property: `og:title`,

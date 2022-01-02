@@ -24,11 +24,16 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
 }) => {
   return (
     <LayoutComponent>
-      <SEO title={'MinGI.tech'} />
+      <SEO
+        title={'MinGI.tech'}
+        description={
+          '항상 Clean Code와 Test에 대한 고민을 하는 주니어 개발자입니다.'
+        }
+      />
       <BannerComponents />
-      <TextLayer>
+      <TextWrapper>
         <BlogText>DEVELOP BLOG</BlogText>
-      </TextLayer>
+      </TextWrapper>
       <PostList posts={edges} />
       <ToaskWrapper>
         <ToastContainer />
@@ -38,10 +43,10 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
 };
 
 const ToaskWrapper = styled.div`
-  font-size: 12px;
-  font-family: 'Noto Sans KR Black', sans-serif !important;
+  font-size: 13px;
+  font-family: 'Noto Sans KR Medium', sans-serif !important;
 `;
-const TextLayer = styled.div`
+const TextWrapper = styled.div`
   height: 25rem;
 `;
 const BlogText = styled.div`

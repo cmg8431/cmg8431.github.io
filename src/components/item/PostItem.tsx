@@ -15,7 +15,7 @@ const PostItem: FunctionComponent<PostItemProps> = ({
   thumbnail: { publicURL },
 }) => {
   const [hover, setHover] = useState({ display: 'none' });
-  const animatedItem: any = useScrollFadeIn();
+  const animatedItem = useScrollFadeIn();
 
   return (
     <>
@@ -76,7 +76,6 @@ const PostItemContent = styled.div`
     filter: blur(4px);
     transition: 0.2s ease;
   }
-
   @media (max-width: 926px) {
     padding: 1rem;
   }
