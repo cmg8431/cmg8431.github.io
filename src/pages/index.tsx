@@ -7,6 +7,7 @@ import PostList from 'components/PostList';
 import { PostListItemType } from 'types/PostItem.types';
 import BannerComponents from 'components/Banner';
 import SEO from 'components/Seo';
+import { ToastContainer } from 'react-toastify';
 
 type IndexPageProps = {
   data: {
@@ -29,10 +30,17 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
         <BlogText>DEVELOP BLOG</BlogText>
       </TextLayer>
       <PostList posts={edges} />
+      <ToaskWrapper>
+        <ToastContainer />
+      </ToaskWrapper>
     </LayoutComponent>
   );
 };
 
+const ToaskWrapper = styled.div`
+  font-size: 12px;
+  font-family: 'Noto Sans KR Black', sans-serif !important;
+`;
 const TextLayer = styled.div`
   height: 25rem;
 `;

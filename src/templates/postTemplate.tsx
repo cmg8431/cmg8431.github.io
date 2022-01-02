@@ -4,6 +4,7 @@ import { PostListItemType } from 'types/PostItem.types';
 import PostContent from '../components/PostContent';
 import LayoutComponent from 'components/Layout';
 import CommentWidget from 'components/CommentWidget';
+import { ToastContainer } from 'react-toastify';
 
 type PostTemplateProps = {
   data: {
@@ -26,6 +27,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({
   return (
     <div>
       <PostContent html={html} />
+      <ToastContainer />
     </div>
   );
 };
