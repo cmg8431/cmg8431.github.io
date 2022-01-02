@@ -1,5 +1,5 @@
 ---
-date: '2021-01-02'
+date: '2022-01-02'
 title: 'NextJS 도전기..'
 summary: 'NextJS에 대해 관심을 갖게되어서 도전하게 되었어요 ! (SSR 도전기!)'
 thumbnail: './Img/MainImg.png'

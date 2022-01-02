@@ -72,7 +72,7 @@ const BlogText = styled.div`
 export const queryPostList = graphql`
   query queryPostList {
     allMarkdownRemark(
-      sort: { order: ASC, fields: [frontmatter___date, frontmatter___title] }
+      sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] }
     ) {
       edges {
         node {
