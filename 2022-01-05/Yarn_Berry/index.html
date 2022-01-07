@@ -59,18 +59,17 @@ data-styled.g35[id="PostContent__MarkdownWrapper-sc-1j5amiu-1"]{content:"dccodk,
 @media (max-width:768px){.hQKHJM{width:100%;line-height:1.6;font-size:14px;padding:80px 20px;}.hQKHJM h1{font-size:23px;}.hQKHJM h2{font-size:20px;}.hQKHJM h3{font-size:17px;}.hQKHJM img{width:100%;}.hQKHJM hr{margin:50px 0;}.hQKHJM p{font-size:18px;}.hQKHJM .gatsby-highlight{display:inline-grid;}}/*!sc*/
 data-styled.g36[id="PostContent__MarkdownRenderer-sc-1j5amiu-2"]{content:"hQKHJM,"}/*!sc*/
 </style><title data-react-helmet="true"></title><link rel="canonical" href="https://mingi.tech/2022-01-05/Yarn_Berry/" data-baseprotocol="https:" data-basehost="mingi.tech"/><link as="script" rel="preload" href="/webpack-runtime-136b789b53a89200cec1.js"/><link as="script" rel="preload" href="/framework-ce686b4092a74038608e.js"/><link as="script" rel="preload" href="/app-fb89e0d3565786e7bfe4.js"/><link as="script" rel="preload" href="/commons-d03e9857530044921eb7.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-tsx-02ba4b0063a611b515dd.js"/><link as="fetch" rel="preload" href="/page-data/2022-01-05/Yarn_Berry/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div><div class="Layout__Wrapper-sc-ynyxaw-0 fDzTgk"><div class="Header__HeaderArea-sc-1vfx1sm-0 kemMkT"><div class="Header__HeaderWrap-sc-1vfx1sm-1 jpxFZJ"><div class="HeaderItem__HeaderItemWapper-sc-13dncf-0 dhqWbD"><a class="HeaderItem__HeaderLogo-sc-13dncf-4 csOovP" href="/">MinGI.tech</a><div class="HeaderItem__HeaderSort-sc-13dncf-3 iizjTR"></div><button class="HeaderItem__ShareButton-sc-13dncf-2 fmtacv">share</button><div class="HeaderItem__HeaderText-sc-13dncf-1 jujbOe">portfolio</div></div></div></div><div class="PostContent__MarkdownWrapper-sc-1j5amiu-1 dccodk"><div class="PostContent__MarkdownRenderer-sc-1j5amiu-2 hQKHJM"><h1>Yarn Berry 란?</h1>
-<p>yarn berry는 새로운 패키지 관리 시스템 입니다. 2020년 1월 25일부터 정식버전이 출시 되었고, 현재는 토스, Babel등 기업과 오픈소스 레포지토리등에서 많이 채택하고 사용하고 있습니다.</p>
+<p>yarn berry는 새로운 패키지 관리 시스템입니다. 2020년 1월 25일부터 정식 버전이 출시 되었고, 현재는 토스, Babel등 기업과 오픈소스 레포지토리등에서 많이 채택하고 사용하고 있다고 하네요.</p>
 <h2>사용 계기</h2>
-<p>처음 yarn berry에 대해서 알게된 계기는 toss의 프론트 개발 스택에 yarn berry가 도입됬었다는 것을 처음 보게되고 관심을 갖게 되었습니다.<br /><br />
-여기서 잘 쓰던 npm을 버리고 왜 yarn berry를 쓰게 되었는지 궁금하신 분들이 꽤 계실 것 이라고 생각합니다. npm은 node.js 설치 시에 기본적으로 제공이 되어 많은 사람들이 사용하고 있으나, 비효율적인 부분이 굉장히 많습니다.</p>
+<p>처음 yarn berry에 대해서 알게 된 계기는 toss의 프론트 개발 스택에 yarn berry가 도입됬었다는 것을 처음 보게 되고 관심을 두게 되었어요.<br /><br />
+여기서 잘 쓰던 npm을 버리고 왜 yarn berry를 쓰게 되었는지 궁금하신 분들이 꽤 계실 것이라고 생각하는데, npm은 node.js 설치 시에 기본적으로 제공이 되어 많은 사람이 사용하고 있으나, 비효율적인 부분이 매우 많습니다.</p>
 <h2>비효율적인 의존성 검색</h2>
-<p>특히 node_modules라는 폴더를 이용하는 것이 특징인데 이렇게 관리 했을 때 의존성 검색은 비효율 적으로 동작한다고 합니다.
-자세한 내용은 토스 개발 블로그를 직접 확인해보시는 것을 추천합니다.<br /><br /></p>
-<p>간단하게 소개해드리자면 npm은 패키지를 찾기위해 계속 상위 디렉토리의 node_modules를 탐색하는데 이때 패키지를 찾지 못할 수록 계속 I/O 호출이 반복되기 떄문에 굉장히 비효율적이다고 볼 수 있습니다.</p>
+<p>특히 node_modules라는 폴더를 이용하는 것이 특징인데 이렇게 관리했을 때 의존성 검색은 비효율적으로 동작한다고 합니다.</p>
+<p>간단하게 소개해드리자면 npm은 패키지를 찾기 위해 계속 상위 디렉토리의 node_modules를 탐색하는데 이때 패키지를 찾지 못할수록 계속 I/O 호출이 반복되기 때문에 굉장히 비효율적이다고 볼 수 있습니다. 자세한 내용은 토스 개발 블로그를 직접 확인해보시는 것을 추천합니다.</p>
 <h2>공간 차지</h2>
-<p>사실 제가 yarn berry로 넘어오게된 가장 큰 이유라고 볼 수 있습니다. 개인적으로 node_modules라는 디렉토리 구조는 정말 큰 공간을 차지합니다. 그 규모는 프로젝트 용량의 절반을 넘을 정도의 용량입니다. 저는 이런 부분에서 npm이라는 파일 관리 시스템이 굉장히 무겁고 비효율적이라고 생각하게 되었고, 결과적으로 yarn berry를 도입하게된 계기가 되었습니다.</p>
+<p>사실 제가 yarn berry로 넘어오게 된 가장 큰 이유라고 볼 수 있습니다. 개인적으로 node_modules라는 디렉토리 구조는 정말 큰 공간을 차지합니다. 그 규모는 프로젝트 용량의 절반을 넘을 정도의 용량입니다. 저는 이런 부분에서 npm이라는 파일 관리 시스템이 매우 무겁고 비효율적이라고 생각하게 되었고, 결과적으로 yarn berry를 도입하게 된 계기가 되었습니다.</p>
 <h2>yarn berry가 어떻게 기존의 방식에서 벗어났을까?</h2>
-<p>yarn berry는 이를 PnP 전략을 사용해서 해당 방식을 해결했습니다. 이 PnP 전략을 사용하게된다면 더 이상 node_modules에 저장되지 않습니다. 대신 yarn/cache 폴더에 의존성의 정보가 저장되고 .pnp.js 파일에 의존성을 찾을 수 있게됩니다. <br /> <br />
+<p>yarn berry는 이를 PnP 전략을 사용해서 해당 방식을 해결했습니다. 이 PnP 전략을 사용하게 된다면 더 이상 node_modules에 저장되지 않습니다. 대신 yarn/cache 폴더에 의존성의 정보가 저장되고 .pnp.js 파일에 의존성을 찾을 수 있게 됩니다. <br /><br />
 또한 각 의존성은 Zip 아카이브로 관리 됩니다.</p>
 <h2>pnp 사용법</h2>
 <p>먼저 yarn을 설치합니다. (설치 되어있다면 생략해도 무방합니다.)</p>
