@@ -2,7 +2,6 @@ import React, { FunctionComponent, useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { PostFrontmatterType } from 'types/PostItem.types';
-import Thumbnail from '../../assets/img/PostImg.png';
 import { useScrollFadeIn } from '../../hooks/useScrollFadeIn';
 
 type PostItemProps = PostFrontmatterType & { link: string };
@@ -21,8 +20,8 @@ const PostItem: FunctionComponent<PostItemProps> = ({
     <>
       <PostItemWrapper
         to={link}
-        onMouseEnter={e => setHover({ display: 'block' })}
-        onMouseLeave={e => setHover({ display: 'none' })}
+        onMouseEnter={() => setHover({ display: 'block' })}
+        onMouseLeave={() => setHover({ display: 'none' })}
         {...animatedItem}
       >
         <PostItemContent>
@@ -71,6 +70,7 @@ const PostItemContent = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  min-height: 30.5rem;
   :hover {
     backdrop-filter: blur(5px);
     filter: blur(4px);
