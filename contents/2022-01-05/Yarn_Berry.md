@@ -1,5 +1,6 @@
 ---
 date: '2022-01-05'
+categories: ['Web']
 title: 'Yarn Berry 도입기'
 summary: '최근 많이 사용되고 있는 yarn berry에 대해서 학습하고 사용해볼게요.'
 thumbnail: './Img/MainImg.png'

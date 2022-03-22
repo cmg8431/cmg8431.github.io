@@ -1,5 +1,6 @@
 ---
 date: '2022-01-15'
+categories: ['Web', 'Typescript']
 title: 'Type, Inteface 차이'
 summary: '오늘은 제가 좋아하는 언어인 타입스크립트의 type과 inteface의 차이점을 알아봅시다.'
 thumbnail: './Img/MainImg.png'

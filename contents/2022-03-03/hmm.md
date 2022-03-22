@@ -1,5 +1,6 @@
 ---
 date: '2022-03-03'
+categories: ['Web', 'Typescript', 'Next.js', 'project']
 title: '개인프로젝트 - Hmm'
 summary: '제 개인 프로젝트인 교내 음악 신청 프로젝트에 대해 소개합니다.'
 thumbnail: './Img/MainImg.png'

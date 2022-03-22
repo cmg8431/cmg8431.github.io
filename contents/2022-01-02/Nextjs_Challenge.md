@@ -1,7 +1,8 @@
 ---
 date: '2022-01-02'
+categories: ['Web', 'Next.js']
 title: 'NextJS 도전기..'
-summary: 'NextJS에 대해 관심을 갖게되어서 도전하게 되었어요 ! (SSR 도전기!)'
+summary: 'NextJS에 대해 관심이 생겨 공부를 해봤습니다 :)'
 thumbnail: './Img/MainImg.png'
 ---
 

@@ -1,5 +1,6 @@
 ---
 date: '2022-01-03'
+categories: ['CodingTest']
 title: '크레인 인형뽑기'
 summary: '오늘은 코딩 테스트 중 에서도 유명한 문제, 카카오 크레인 인형뽑기를 풀어 보았어요 !'
 thumbnail: './Img/MainImg.png'
