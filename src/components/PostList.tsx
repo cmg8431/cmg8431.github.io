@@ -1,17 +1,35 @@
-import React, { FunctionComponent } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import React, { FunctionComponent, useMemo } from 'react';
+import styled from 'styled-components';
 import PostItem from 'components/item/PostItem';
 import { PostListItemType } from 'types/PostItem.types';
-import { useEffect } from 'react';
 
-type PostListProps = {
+export interface PostListProps {
+  selectedCategory: string;
   posts: PostListItemType[];
-};
+}
 
-const PostList: FunctionComponent<PostListProps> = ({ posts }: any) => {
+const PostList: FunctionComponent<PostListProps> = ({
+  selectedCategory,
+  posts,
+}) => {
+  const postListData = useMemo(
+    () =>
+      posts.filter(
+        ({
+          node: {
+            frontmatter: { categories },
+          },
+        }: PostListItemType) =>
+          selectedCategory !== 'All'
+            ? categories.includes(selectedCategory)
+            : true,
+      ),
+    [selectedCategory],
+  );
+
   return (
     <PostListWrapper>
-      {posts.map(
+      {postListData.map(
         ({
           node: {
             id,
@@ -27,16 +45,21 @@ const PostList: FunctionComponent<PostListProps> = ({ posts }: any) => {
 };
 
 const PostListWrapper = styled.div`
-  margin: 0 auto;
+  max-width: 83rem;
+  width: 100%;
+  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  width: 60rem;
-
-  @media (max-width: 926px) {
-    grid-template-columns: 1fr;
-    width: 100%;
-    padding: 0px;
+  grid-template-columns: repeat(auto-fill, 20rem);
+  grid-auto-rows: 23.75rem;
+  row-gap: 3.5rem;
+  -webkit-box-pack: justify;
+  justify-content: space-around;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(auto-fill, 18.75rem);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, 21.25rem);
+    grid-auto-rows: 22.5rem;
   }
 `;
 

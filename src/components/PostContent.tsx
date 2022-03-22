@@ -29,7 +29,6 @@ const MarkdownWrapper = styled.div`
   }
 `;
 const MarkdownRenderer = styled.div`
-  // Renderer Style
   display: flex;
   flex-direction: column;
   width: 768px;
@@ -37,7 +36,6 @@ const MarkdownRenderer = styled.div`
   padding: 100px 0;
   word-break: break-all;
   color: white;
-
   line-height: 1.8;
   font-size: 16px;
   font-weight: 400;
