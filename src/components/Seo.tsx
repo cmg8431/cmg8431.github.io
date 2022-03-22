@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { Helmet } from 'react-helmet';
-import Icon from '../assets/img/Logo.png';
+import Icon from '../assets/png/Logo.png';
 
 interface Props {
   description?: string;
@@ -11,7 +11,7 @@ interface Props {
 
 export default function SEO({
   description = '',
-  lang = 'en',
+  lang = 'ko',
   meta = [],
   title,
 }: Props): ReactElement {
