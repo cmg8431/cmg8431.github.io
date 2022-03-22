@@ -21,7 +21,7 @@ const LayoutComponent: FunctionComponent<Props> = ({ children }) => {
 
 const Main = styled.main`
   width: 100%;
-  height: 100%;
+  height: 100vh;
 `;
 
 const GlobalStyle = createGlobalStyle`
