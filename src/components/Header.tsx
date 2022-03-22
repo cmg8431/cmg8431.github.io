@@ -1,11 +1,4 @@
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  FC,
-  FunctionComponent,
-  ReactNode,
-} from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import HeaderItemComponent from './item/HeaderItem';
 
@@ -19,11 +12,11 @@ const HeaderComponent: FunctionComponent = () => {
   );
 };
 
-const HeaderArea = styled.div`
+const HeaderArea = styled.header`
   position: relative;
   width: 100%;
   height: 3.5rem;
-  background-color: black;
+  background-color: #08080b;
 `;
 
 const HeaderWrap = styled.div`

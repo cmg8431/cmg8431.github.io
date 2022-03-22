@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const FooterComponent: FunctionComponent = () => {
   return (
     <FooterWrapper>
-      © 2021 Developer &nbsp;
+      Developer &nbsp;
       <DevelopText to="https://github.com/cmg8431">@cmg8431</DevelopText>,
       Powered By Gatsby 😆
     </FooterWrapper>
@@ -13,16 +13,14 @@ const FooterComponent: FunctionComponent = () => {
 };
 const FooterWrapper = styled.footer`
   display: flex;
-  margin-top: 7rem;
-  margin-bottom: 7rem;
-  font-size: 1rem;
-  text-align: center;
-  line-height: 1.5;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+  margin-top: 5rem;
+  background-color: #111114;
   color: white;
-  font-family: 'Times New Roman', Times, serif;
-  @media (max-width: 926px) {
-    font-size: 0.7rem;
-  }
+  font-size: 0.8rem;
 `;
 
 const DevelopText = styled(Link)`
