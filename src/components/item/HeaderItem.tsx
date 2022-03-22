@@ -1,18 +1,15 @@
-import React, { FC, FunctionComponent, useEffect } from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import { useState } from 'react';
 import { useCopyClipboard } from 'hooks';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const HeaderItemComponent: FunctionComponent = () => {
-  const [toastState, setToastState] = useState<boolean>(false);
   const [clipboardState, copyToClipboard] = useCopyClipboard();
 
   const copy = (e: { preventDefault: () => void }): void => {
     const { href } = location;
-    setToastState(true);
     e.preventDefault();
     copyToClipboard(href);
     toast.success('현재 페이지의 주소가 복사되었습니다.', {
@@ -24,10 +21,21 @@ const HeaderItemComponent: FunctionComponent = () => {
 
   return (
     <HeaderItemWapper>
-      <HeaderLogo to={'/'}>MinGI.tech</HeaderLogo>
+      <HeaderLogo to={'/'}>
+        <ImportantMark>MinGI</ImportantMark>.tech
+      </HeaderLogo>
       <HeaderSort />
       <ShareButton onClick={copy}>share</ShareButton>
-      <HeaderText>portfolio</HeaderText>
+      <ShareButton
+        onClick={() =>
+          window.open(
+            'https://adventurous-friend-e13.notion.site/5421caf4083840268f58d67b4ca0d529',
+            '_blank',
+          )
+        }
+      >
+        portfolio
+      </ShareButton>
     </HeaderItemWapper>
   );
 };
@@ -41,28 +49,32 @@ const HeaderItemWapper = styled.div`
   align-items: center;
 `;
 
-const HeaderText = styled.div`
+const ImportantMark = styled.mark`
+  background: none;
+  color: white;
+  font-weight: 600;
+`;
+
+const ShareButton = styled.button`
+  padding: 2px 0px 0px 0px;
+  background-color: #ffffff00;
+  font-size: 1rem;
+  font-weight: 300;
+  border: none;
+  color: white;
   margin-left: 2rem;
   @media (max-width: 900px) {
     margin-right: 1rem;
   }
 `;
 
-const ShareButton = styled.button`
-  padding: 2px 0px 0px 0px;
-  background-color: #ffffff00;
-  font-size: 1.1rem;
-  border: none;
-  color: white;
-`;
-
 const HeaderSort = styled.div`
-  width: 41.7rem;
+  width: 64rem;
 `;
 const HeaderLogo = styled(Link)`
   color: white;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 200;
   text-decoration: none;
   @media (max-width: 900px) {
     margin-left: 1rem;
