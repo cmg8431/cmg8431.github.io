@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 import FooterComponent from './Footer';
 import HeaderComponent from './Header';
+import UseScrollToggle from './UseScrollToggle';
 
 interface Props {
   children: React.ReactNode;
@@ -15,6 +16,7 @@ const LayoutComponent: FunctionComponent<Props> = ({ children }) => {
       <HeaderComponent />
       <Main>{children}</Main>
       <FooterComponent />
+      <UseScrollToggle />
     </Wrapper>
   );
 };
