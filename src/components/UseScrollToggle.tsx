@@ -37,6 +37,7 @@ const UseScrollToggleComponent: FunctionComponent = () => {
 };
 
 const Button = styled.div`
+  z-index: 9999;
   width: 40px;
   height: 40px;
   position: fixed;
