@@ -42,6 +42,12 @@ const PostItemWrapper = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s;
+
+  :hover {
+    z-index: 100;
+    transform: translateY(-8px) scale(1.02) translateZ(0px);
+  }
 `;
 
 const ThumbnailImage = styled.img`
@@ -77,7 +83,9 @@ const PostItemContent = styled.div`
   margin: 0.3rem;
   :hover {
     box-shadow: #0f0e12 0rem 1rem 5rem 0rem;
+    z-index: 100;
   }
+
   @media (max-width: 926px) {
     padding: 1rem;
   }
@@ -92,7 +100,7 @@ const Title = styled.div`
   display: -webkit-box;
   overflow: hidden;
   margin-bottom: 0.5rem;
-  margin-top: 0.2rem;
+  margin-top: 0.5rem;
   text-overflow: ellipsis;
   white-space: normal;
   overflow-wrap: break-word;

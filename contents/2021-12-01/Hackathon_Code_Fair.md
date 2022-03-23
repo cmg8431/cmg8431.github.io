@@ -1,6 +1,6 @@
 ---
 date: '2021-12-01'
-categories: ['Web', 'React-native', 'Typescript', 'project']
+categories: ['Web', 'React-native', 'Typescript', 'Project']
 title: '첫 해커톤…'
 summary: '첫 해커톤인 한국코드페어의 금상(장관상) 수상까지에 대한 이야기를 담았어요. '
 thumbnail: './Img/MainImg.png'
