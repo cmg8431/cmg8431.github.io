@@ -19,10 +19,10 @@ type GatsbyLinkProps = {
   to: string;
 } & CategoryItemProps;
 
-const CategoryList: FunctionComponent<CategoryListProps> = function ({
+const CategoryList: FunctionComponent<CategoryListProps> = ({
   selectedCategory,
   categoryList,
-}) {
+}) => {
   return (
     <CategoryListWrapper>
       <Ul>
