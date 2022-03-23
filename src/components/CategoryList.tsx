@@ -19,7 +19,7 @@ type GatsbyLinkProps = {
   to: string;
 } & CategoryItemProps;
 
-const CategoryList: FunctionComponent<CategoryListProps> = ({
+const CategoryListComponent: FunctionComponent<CategoryListProps> = ({
   selectedCategory,
   categoryList,
 }) => {
@@ -90,4 +90,4 @@ const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
   }
 `;
 
-export default CategoryList;
+export default CategoryListComponent;

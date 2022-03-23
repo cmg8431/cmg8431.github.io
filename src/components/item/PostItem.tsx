@@ -82,7 +82,7 @@ const PostItemContent = styled.div`
   flex-direction: column;
   margin: 0.3rem;
   :hover {
-    box-shadow: #0f0e12 0rem 1rem 5rem 0rem;
+    /* box-shadow: #0f0e12 0rem 1rem 5rem 0rem; */
     z-index: 100;
   }
 

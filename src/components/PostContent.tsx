@@ -1,13 +1,14 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
-import LayoutComponent from 'components/Layout';
 import CommentWidget from './CommentWidget';
 
 type PostContentProps = {
   html: string;
 };
 
-const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
+const PostContentComponent: FunctionComponent<PostContentProps> = function ({
+  html,
+}) {
   return (
     <>
       <MarkdownWrapper>
@@ -153,4 +154,4 @@ const MarkdownRenderer = styled.div`
   }
 `;
 
-export default PostContent;
+export default PostContentComponent;

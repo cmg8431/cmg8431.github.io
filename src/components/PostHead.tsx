@@ -3,7 +3,7 @@ import React, { FunctionComponent, useEffect } from 'react';
 import styled from 'styled-components';
 import { PostFrontmatterType } from 'types/PostItem.types';
 
-const PostHead: FunctionComponent<PostFrontmatterType> = ({
+const PostHeadComponent: FunctionComponent<PostFrontmatterType> = ({
   title,
   summary,
   date,
@@ -100,4 +100,4 @@ const Date = styled.div`
   margin-right: 0.2rem;
 `;
 
-export default PostHead;
+export default PostHeadComponent;

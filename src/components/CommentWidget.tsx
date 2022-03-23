@@ -14,7 +14,7 @@ type UtterancesAttributesType = {
   async: string;
 };
 
-const CommentWidget: FunctionComponent = () => {
+const CommentWidgetComponent: FunctionComponent = () => {
   const element = createRef<HTMLDivElement>();
 
   useEffect(() => {
@@ -45,4 +45,4 @@ const UtterancesWrapper = styled.div`
     padding: 0 20px;
   }
 `;
-export default CommentWidget;
+export default CommentWidgetComponent;

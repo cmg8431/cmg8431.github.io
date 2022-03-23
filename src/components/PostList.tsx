@@ -8,7 +8,7 @@ export interface PostListProps {
   posts: PostListItemType[];
 }
 
-const PostList: FunctionComponent<PostListProps> = ({
+const PostListComponent: FunctionComponent<PostListProps> = ({
   selectedCategory,
   posts,
 }) => {
@@ -63,4 +63,4 @@ const PostListWrapper = styled.div`
   }
 `;
 
-export default PostList;
+export default PostListComponent;
