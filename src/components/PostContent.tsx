@@ -9,14 +9,14 @@ type PostContentProps = {
 
 const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
   return (
-    <LayoutComponent>
+    <>
       <MarkdownWrapper>
         <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
       </MarkdownWrapper>
       <CommentWrapper>
         <CommentWidget />
       </CommentWrapper>
-    </LayoutComponent>
+    </>
   );
 };
 const CommentWrapper = styled.div`
@@ -33,7 +33,7 @@ const MarkdownRenderer = styled.div`
   flex-direction: column;
   width: 768px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 2.5rem 0;
   word-break: break-all;
   color: white;
   line-height: 1.8;

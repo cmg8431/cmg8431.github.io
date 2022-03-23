@@ -1,8 +1,10 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useEffect } from 'react';
 import { graphql } from 'gatsby';
 import { PostListItemType } from 'types/PostItem.types';
 import PostContent from '../components/PostContent';
 import { ToastContainer } from 'react-toastify';
+import PostHead from 'components/PostHead';
+import LayoutComponent from 'components/Layout';
 
 type PostTemplateProps = {
   data: {
@@ -19,14 +21,32 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({
   },
 }) => {
   const {
-    node: { html },
+    node: {
+      html,
+      frontmatter: {
+        title,
+        summary,
+        date,
+        categories,
+        thumbnail: { publicURL },
+      },
+    },
   } = edges[0];
 
   return (
-    <div>
+    <LayoutComponent>
+      <PostHead
+        title={title}
+        summary={summary}
+        date={date}
+        categories={categories}
+        thumbnail={{
+          publicURL: publicURL,
+        }}
+      />
       <PostContent html={html} />
       <ToastContainer />
-    </div>
+    </LayoutComponent>
   );
 };
 

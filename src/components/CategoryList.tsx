@@ -63,7 +63,7 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   height: 1.5rem;
-  margin: 0px 1rem 1rem 0px;
+  margin: 0px 0rem 1rem 0px;
   padding: 0.0625rem 0.4375rem;
   display: inline-flex;
   -webkit-box-align: center;
