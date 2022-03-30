@@ -29,7 +29,7 @@ const HeaderItemComponent: FunctionComponent = () => {
       <ShareButton
         onClick={() =>
           window.open(
-            'https://adventurous-friend-e13.notion.site/5421caf4083840268f58d67b4ca0d529',
+            'https://adventurous-friend-e13.notion.site/c31b7e6ae1124dbcaad36964ac7a45cb',
             '_blank',
           )
         }
