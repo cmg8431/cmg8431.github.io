@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-post-template-tsx",
+    "path": "/2022-04-04/generic/",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"html":"","frontmatter":{"title":"제네릭 사용법","summary":"Typescript 제네릭에 대해서 공부 해봅시다","date":"2022.04.04.","categories":["Web","Typescript"],"thumbnail":{"publicURL":"/static/1fcf8f71ee6bb8d48d129d7946890588/MainImg.png"}}}}]}},"pageContext":{"slug":"/2022-04-04/generic/"}},
+    "staticQueryHashes": []}
