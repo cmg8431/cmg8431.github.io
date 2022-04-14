@@ -92,7 +92,8 @@ const PostItemContent = styled.div`
 `;
 
 const TextContent = styled.div`
-  padding: 2rem 1.5rem 2rem 1.5rem;
+  padding: 2rem 1.5rem;
+  min-height: 10rem;
   background-color: #111114;
 `;
 
