@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-post-template-tsx",
     "path": "/2022-04-04/generic/",
-    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"html":"","frontmatter":{"title":"제네릭 사용법","summary":"Typescript 제네릭에 대해서 공부 해봅시다","date":"2022.04.04.","categories":["Web","Typescript"],"thumbnail":{"publicURL":"/static/1fcf8f71ee6bb8d48d129d7946890588/MainImg.png"}}}}]}},"pageContext":{"slug":"/2022-04-04/generic/"}},
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"html":"<h1>제네릭이 뭐죠..? 먹는건가요.. 😶</h1>\n<p>제네릭이란 데이터 타입을 일반화한다고 하네요. 즉, 자료형을 직접 정해주지 않아도 여러 타입들을 사용할 수 있게끔 하는게 제네릭이라고 합니다. 한번의 선언으로 다양한 타입에 재사용할 수 있다니.. 신세계네요. <br /><br /></p>\n<h2>제네릭이 없으면 어떤 문제가 생기나요 ?</h2>","frontmatter":{"title":"제네릭 사용법","summary":"Typescript 제네릭에 대해서 공부 해봅시다","date":"2022.04.04.","categories":["Web","Typescript"],"thumbnail":{"publicURL":"/static/1fcf8f71ee6bb8d48d129d7946890588/MainImg.png"}}}}]}},"pageContext":{"slug":"/2022-04-04/generic/"}},
     "staticQueryHashes": []}
