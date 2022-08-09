@@ -41,6 +41,7 @@ typings/
 
 # Optional npm cache directory
 .npm
+garbage_collection
 
 # Optional eslint cache
 .eslintcache
