@@ -64,7 +64,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "set NODE_OPTIONS=--openssl-legacy-provider && gatsby build && gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
